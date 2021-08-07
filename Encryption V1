@@ -1,0 +1,20 @@
+#[+]Ox Web Moroccan[+]
+import urllib.request
+import os
+import time
+import sys
+print('''
+##############################################
+##                                          ##
+##             Encryption                   ##
+##       BY:           #~Ox Web             ##
+##############################################                                  
+''')
+import hashlib
+text = str(input("Enter text >"))
+hash_type = str(input("Enter your typr >"))
+text = text.encode('utf-8')
+hash_hash = hashlib.new(hash_type)
+hash_hash.update(text)
+hasher = hash_hash.hexdigest()
+print(hasher)
